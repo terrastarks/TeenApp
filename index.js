@@ -10,8 +10,8 @@ const app = express();
 dotenv.config({ path: "./config/config.env" });
 
 // google api key
-const key = require("./config/key.json");
-const { oauth2Client } = require("./config/key.json");
+const key = require("./config/config.env");
+const { oauth2Client } = require("./config/config.env");
 
 // Create OAuth2 client
 const oAuth2 = new google.auth.OAuth2(
